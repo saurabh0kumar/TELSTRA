@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "64c0df948116771b131c3daa"
+  },
+  "toy_name": "Helicopter",
+  "category": "Electronic",
+  "price": 4500,
+  "kid_friendly": "yes",
+  "battery_included": "No",
+  "flying_type": "No",
+  "color": "Military Green"
+},
+{
+  "_id": {
+    "$oid": "64c0e0548116771b131c3dab"
+  },
+  "toy_name": "Panda",
+  "category": "Fluffed",
+  "price": 1800,
+  "kid-friendly": "Yes",
+  "material": "Cotton/Wool"
+},
+{
+  "_id": {
+    "$oid": "64c0e09a8116771b131c3dac"
+  },
+  "toy_name": "Teddy",
+  "category": "Fluffed",
+  "price": 1450,
+  "kid-friendly": "Yes",
+  "material": "Cotton/Wool"
+},
+{
+  "_id": {
+    "$oid": "64c0e0af8116771b131c3dad"
+  },
+  "toy_name": "Car",
+  "category": "Electronic",
+  "price": 1560
+},
+{
+  "_id": {
+    "$oid": "64c0e1848116771b131c3dae"
+  },
+  "toy_name": "Snake&Ladder",
+  "category": "Board",
+  "price": 650,
+  "material": "rubber"
+},
+{
+  "_id": {
+    "$oid": "64c0e1ae8116771b131c3daf"
+  },
+  "toy_name": "Ludo",
+  "category": "Board",
+  "price": 700,
+  "material": "rubber"
+}]

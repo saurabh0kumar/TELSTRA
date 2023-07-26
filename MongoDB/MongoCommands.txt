@@ -1,0 +1,36 @@
+show dbs : shows all databases
+
+use <database_name> : use a database
+
+show collection : display collections
+
+db.<collection_name>.find() : display all data
+
+db.<collection_name>.find().pretty() : display all data in a structured manner (easier to read)
+
+db.<collection_name>.find().count() : display number of documents in the collection (generally any command that gives multiple outputs can be added with count to get the number)
+
+db.<collection_name>.find(<key>:<value>,<key>:<value>,...) : displays documents with the mention key and value filters
+
+db.<collection_name>.insert({"toy_name" : "chess","category":"games","age":"8+"}) : insert a document
+
+db.<collection_name>insertMany([{<key>:<value>,....},{...},{...},...]) : insert multiple documents
+
+db.<collection_name>.findOne({<k>:<v>}) : returns first match
+
+db.createCollection(<collection_name>) : create collection
+
+db.<collection_name>.deleteOne({'<key>':'<value>'}) : delete first encountered document
+
+db.<collection_name>.deleteMany([{<k>:<v>},....]) : delete documents matching the key values
+
+db.<collection_name>.updateOne({<k>:<v>},{$set:{<uk>:<uv>}}) : update first matching entry
+
+db.<collection_name>.updateMany({<k>:<v>},{$set:{<uk>:<uv>}}) : update all matching entries
+
+db.<collection_name>.updateOne({<k>:<v>},{$unset:{<uk>:<uv>}}) : !!google!!
+
+db.toy.find({'price':{$lt:1000}}) :toys with price less than 1000
+
+db.toy.find({'price':{$gt:1000}}) : toys with price greater than 1000
+
