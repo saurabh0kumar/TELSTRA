@@ -132,3 +132,34 @@ where cu.customer_name='Mallikarjun' and t.toy_id=ca.toy_id and ca.customer_id=c
 select cu.customer_name, t.category
 from toy t, customer cu, cart ca
 where t.category='Fluffed' and t.toy_id=ca.toy_id and ca.customer_id=cu.customer_id;
+
+
+select max(price), category
+from toy
+group by category;
+
+
+-- toy with highest price in that category
+select t.toy_name,t.price, t.category
+from toy t
+where (t.category,t.price) in (select category,max(price) from toy group by category);
+
+-- number of toys in cart based on customer location
+select count(ca.cart_id), cu.location
+from cart ca, customer cu
+where ca.customer_id=cu.customer_id
+group by cu.location;
+
+-- avg price of toys in cart based on customer location
+select avg(t.price),cu.location
+from toy t, customer cu, cart ca
+where ca.customer_id=cu.customer_id and ca.toy_id=t.toy_id
+group by cu.location;
+
+-- name of customer with highest price toy in each category
+SELECT c.customer_name,t.toy_id,t.category, t.price 
+FROM customer c 
+JOIN cart cr ON c.customer_id = cr.customer_id 
+JOIN toy t ON cr.toy_id = t.toy_id 
+WHERE (t.category, t.price) IN ( SELECT category, MAX(price) as max_price FROM toy GROUP BY category);
+
