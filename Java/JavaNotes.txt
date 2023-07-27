@@ -1,0 +1,6 @@
+- Objects stored in heap
+- References stored in stack
+- <object_name>.hashCode() : gives hash value for every object
+- static variable/method is same for all instances of the class and it's value can be changed
+- static variables/methods are allocated during compilation in a separate space than stack and heap
+- 
