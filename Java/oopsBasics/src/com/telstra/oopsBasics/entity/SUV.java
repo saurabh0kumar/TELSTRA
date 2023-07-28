@@ -1,4 +1,4 @@
-package oopsBasics;
+package com.telstra.oopsBasics.entity;
 
 public class SUV extends Car{
 
@@ -15,6 +15,11 @@ public class SUV extends Car{
 		super(carName, fuelType, engineCapacity, mileage, power);
 		this.driveMode = driveMode;
 		this.sunRoof = sunRoof;
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("In Finalize block of SUV");
 	}
 	
 	public void displaySUVCarFeatures() {

@@ -1,4 +1,7 @@
-package oopsBasics;
+package com.telstra.oopsBasics.driver;
+
+import com.telstra.oopsBasics.entity.SUV;
+import com.telstra.oopsBasics.entity.Sedan;
 
 public class InheritenceDemo {
 

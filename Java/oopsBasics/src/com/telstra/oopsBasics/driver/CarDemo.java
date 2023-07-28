@@ -1,4 +1,6 @@
-package oopsBasics;
+package com.telstra.oopsBasics.driver;
+
+import com.telstra.oopsBasics.entity.Car;
 
 public class CarDemo {
 	

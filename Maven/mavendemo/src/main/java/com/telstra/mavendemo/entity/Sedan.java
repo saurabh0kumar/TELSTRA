@@ -1,4 +1,4 @@
-package oopsBasics;
+package com.telstra.mavendemo.entity;
 
 public class Sedan extends Car{
 	
@@ -13,6 +13,11 @@ public class Sedan extends Car{
 		super(carName, fuelType, engineCapacity, mileage, power);  //super class constructor
 		this.bootSpace = bootSpace;
 		this.airBags = airBags;
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("In Finalize block of Sedan");
 	}
 	
 	//method overriding

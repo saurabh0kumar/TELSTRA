@@ -1,4 +1,4 @@
-package oopsBasics;
+package com.telstra.oopsBasics.entity;
 
 public class Car {
 	private String carName;
@@ -20,6 +20,11 @@ public class Car {
 		this.engineCapacity = engineCapacity;
 		this.mileage = mileage;
 		this.power = power;
+	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("In Finalize block of Car");
 	}
 	
 	//getters and setters
