@@ -1,4 +1,4 @@
-# Telstra_Bootcamp_test
+# Telstra_Bootcamp_git_commands
 _________________________________________________________________________________________________________________________
 git init -
             initializes git repository in a local directory
