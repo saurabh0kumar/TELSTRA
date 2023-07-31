@@ -1,6 +1,6 @@
 package com.telstra.mavendemo.entity;
 
-public class Car {
+public abstract class Car {
 	private String carName;
 	private String fuelType;
 	private double engineCapacity;
@@ -77,9 +77,7 @@ public class Car {
 	}
 	
 	//car methods
-	public void accelerate() {
-		System.out.println(carName+" Car is accelerating....");
-	}
+	public abstract void accelerate();
 	
 	public void applyBrakes() {
 		System.out.println(carName+" Car is slowing/stopping....");

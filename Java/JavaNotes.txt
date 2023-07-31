@@ -9,3 +9,8 @@
 	> Default: accessible only in same package (also called package private)
 	> Protected: accessible from same package and sub-class in different package
 	> Public: accessible from everywhere
+- Abstract classes cannot be instanciated
+- An abstract class is not required to have an abstract method in it. But any class that has an abstract method in it or that does not provide an implementation for any abstract methods declared in its superclasses must be declared as an abstract class.
+- When a class extends an abstract class, it enforces overriding.
+- Interface class is not extended but implemented
+- Interface class include abstract methods only by default, basically only methods without implementation

@@ -13,9 +13,9 @@ public class InheritanceDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Car car = new Car();
-		logger.info("Car Object Created....\n");
-		System.out.println("Car HashCode: "+car.hashCode()+"\n");
+//		Car car = new Car();
+//		logger.info("Car Object Created....\n");
+//		System.out.println("Car HashCode: "+car.hashCode()+"\n");
 		
 		Sedan verna = new Sedan("Hyundai Verna", "Diesel", 1500, 15.6, 125.3, 450, 6);
 		logger.info("Sedan Object Created...\n");
