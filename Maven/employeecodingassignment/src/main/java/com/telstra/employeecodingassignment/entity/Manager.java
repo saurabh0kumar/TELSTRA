@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 public class Manager extends Employee {
 	
-	private static Logger logger  = (Logger) LoggerFactory.getLogger(Manager.class);
+	private static Logger logger  = (Logger) LoggerFactory.getLogger("Manager");
 	public int teamSize;
 	public String projName;
 	
@@ -24,7 +24,7 @@ public class Manager extends Employee {
 	@Override
 	public void dowork() {
 		logger.info("Meeting scheduled by "+employeeName);
-		logger.info(employeeName+" has delegated work");
+		logger.info(employeeID+" has delegated work");
 		System.out.println(employeeName+" is managing a team of "+teamSize+" employees");
 	}
 

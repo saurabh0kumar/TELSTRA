@@ -14,3 +14,4 @@
 - When a class extends an abstract class, it enforces overriding.
 - Interface class is not extended but implemented
 - Interface class include abstract methods only by default, basically only methods without implementation
+- Loose coupling and tight cohesion are desired in good programming design

@@ -13,7 +13,7 @@ public abstract class Employee {
 		
 	}
 	
-	private static Logger logger = (Logger) LoggerFactory.getLogger(Employee.class);
+	private static Logger logger = (Logger) LoggerFactory.getLogger("Employee");
 	
 	public Employee(int employeeID, String employeeName, String designation, int salary) {
 		this.employeeID = employeeID;
