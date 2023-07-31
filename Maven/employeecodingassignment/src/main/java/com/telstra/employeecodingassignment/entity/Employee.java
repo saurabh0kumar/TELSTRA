@@ -27,6 +27,6 @@ public abstract class Employee {
 	
 	
 	//abstract class
-	public abstract void dowork();
+	public abstract void doWork();
 	
 }

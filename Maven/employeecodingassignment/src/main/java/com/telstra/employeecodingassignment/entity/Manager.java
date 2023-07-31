@@ -22,7 +22,7 @@ public class Manager extends Employee {
 	}
 
 	@Override
-	public void dowork() {
+	public void doWork() {
 		logger.info("Meeting scheduled by "+employeeName);
 		logger.info(employeeID+" has delegated work");
 		System.out.println(employeeName+" is managing a team of "+teamSize+" employees");

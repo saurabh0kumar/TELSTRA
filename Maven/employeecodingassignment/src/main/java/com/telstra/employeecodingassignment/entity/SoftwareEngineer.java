@@ -25,7 +25,7 @@ public class SoftwareEngineer extends Employee{
 	}
 	
 	@Override
-	public void dowork() {
+	public void doWork() {
 		logger.info(employeeName+" is working with "+teamName+" team");
 		System.out.println(employeeName+" has the following skills:\n"+Arrays.toString(skills));
 	}

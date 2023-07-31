@@ -24,7 +24,7 @@ public class SoftwareTester extends Employee{
 	}
 	
 	@Override
-	public void dowork() {
+	public void doWork() {
 		logger.info(employeeName + " excells at " + typeOfTester +" testing.");
 		System.out.println(employeeName+" has the following skills:\n"+ Arrays.toString(skills));
 	}

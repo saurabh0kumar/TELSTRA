@@ -12,36 +12,32 @@ public class WorkingEmp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Employee man1 = new Manager(100059,"Rahul","Senior Manager",23,8,"Development");
-		man1.dowork();
+		man1.doWork();
 		
 		System.out.println();
 		
 		Employee man2 = new Manager(100067,"Prem","Junior Manager",16,5,"Cybersecurity");
-		man2.dowork();
+		man2.doWork();
 		
 		System.out.println();
 		
-		String[] seskills1 = {"Java","Python","React","Node"};
-		Employee se1 = new SoftwareEngineer(120023,"Khushagra","Senior Developer",20,seskills1,"Development");
-		se1.dowork();
+		Employee se1 = new SoftwareEngineer(120023,"Khushagra","Senior Developer",20,new String[]{"Java","Python","React","Node"},"Development");
+		se1.doWork();
 		
 		System.out.println();
 		
-		String[] seskills2 = {"C++","Python","ML","Cloud"};
-		Employee se2 = new SoftwareEngineer(120029,"Om","Junior Developer",15,seskills2,"Cybersecurity");
-		se2.dowork();
+		Employee se2 = new SoftwareEngineer(120029,"Om","Junior Developer",15,new String[] {"C++","Python","ML","Cloud"},"Cybersecurity");
+		se2.doWork();
 		
 		System.out.println();
 		
-		String[] stskills1 = {"Appium","Selenium","Cucumber","SoapUI"};
-		Employee st1 = new SoftwareTester(156080,"Saurabh","Senior Test Engineer",12,stskills1,"Automation");
-		st1.dowork();
+		Employee st1 = new SoftwareTester(156080,"Saurabh","Senior Test Engineer",12,new String[]{"Appium","Selenium","Cucumber","SoapUI"},"Automation");
+		st1.doWork();
 		
 		System.out.println();
 		
-		String[] stskills2 = {"Postman","SikuliX","TestRail","Jira"};
-		Employee st2 = new SoftwareTester(156087,"Malik","Senior Test Engineer",10,stskills2,"Manual");
-		st2.dowork();
+		Employee st2 = new SoftwareTester(156087,"Malik","Senior Test Engineer",10,new String[]{"Postman","SikuliX","TestRail","Jira"},"Manual");
+		st2.doWork();
 	}
 
 }
