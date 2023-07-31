@@ -27,23 +27,4 @@ public class Manager extends Employee {
 		logger.info(employeeID+" has delegated work");
 		System.out.println(employeeName+" is managing a team of "+teamSize+" employees");
 	}
-
-	
-	//getters and setters
-	
-	public int getTeamSize() {
-		return teamSize;
-	}
-
-	public void setTeamSize(int teamSize) {
-		this.teamSize = teamSize;
-	}
-
-	public String getProjName() {
-		return projName;
-	}
-
-	public void setProjName(String projName) {
-		this.projName = projName;
-	}
 }
