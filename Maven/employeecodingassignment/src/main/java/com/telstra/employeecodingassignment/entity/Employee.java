@@ -3,6 +3,10 @@ package com.telstra.employeecodingassignment.entity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import lombok.Getter;
+import lombok.Setter;
+@Setter
+@Getter
 public abstract class Employee {
 	public int employeeID;
 	public String employeeName;
